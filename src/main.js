@@ -9,7 +9,7 @@ Vue.use(ViewUI);
 const object = {
     ip: 'ws://121.40.165.18:8800'
 }
-const websocket = new webSocket(object);
+const websocket = new  (object);
 Vue.prototype.webSocket = websocket;
 Vue.config.productionTip = false
 
