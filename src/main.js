@@ -5,6 +5,8 @@ import webSocket from '@/assets/js/websocket';
 import ViewUI from 'view-design';
 import 'view-design/dist/styles/iview.css';
 import '@/assets/style/common.less';
+import deepClone from "@/utils/deepClone.js";
+Vue.use(deepClone);
 Vue.use(ViewUI);
 
 const object = {
