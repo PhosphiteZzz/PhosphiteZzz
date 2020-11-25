@@ -1,20 +1,25 @@
 <template>
   <div class="hello">
-    <Button type="info" ghost>Info</Button>
-    <Button type="success" ghost>Success</Button>
-    <Button type="warning" ghost>Warning</Button>
-    <Button type="error" ghost>Error</Button>
+    <countDown :countTime="countTime"></countDown>
   </div>
 </template>
 
 <script>
+import countDown from "./countDown";
 const { log } = console;
 export default {
   name: "HelloWorld",
   data() {
     return {
       socket: null,
+      countTime:{
+        minute:12,
+        second:11
+      }
     };
+  },
+  components: {
+    countDown,
   },
   props: {
     msg: String,

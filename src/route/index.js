@@ -16,6 +16,16 @@ const routes = [
     path: "/d3",
     name: "d3",
     component: () => import("@/components/d3.vue")
+  },
+  {
+    path: "/map",
+    name: "map",
+    component: () => import("@/components/map.vue")
+  },
+  {
+    path: "/drag",
+    name: "drag",
+    component: () => import("@/components/drag.vue")
   }
 ];
 const router = new VueRouter({
