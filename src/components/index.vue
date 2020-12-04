@@ -39,5 +39,13 @@ export default {
 .hello {
   width: 100%;
   height: 100%;
+  position: relative;
+  .CountDown{
+    width: 400px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 </style>

@@ -13,6 +13,8 @@ export default {
 #app {
   width: 100%;
   height: 100%;
+  min-width: 1440px;
+  min-height: 900px;
 }
 // #nprogress .bar {
 //   background: red !important; //自定义nprogress颜色

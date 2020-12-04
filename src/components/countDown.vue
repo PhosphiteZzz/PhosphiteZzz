@@ -75,5 +75,11 @@ export default {
 <style lang="less" scoped>
 .CountDown {
   color: #1f2124;
+  p{
+    font-size: 72px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 5px 5px #ccc;
+  }
 }
 </style>
