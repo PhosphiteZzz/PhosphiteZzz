@@ -6,13 +6,15 @@
 
 <script>
 export default {
-  name: 'App',
-}
+  name: "App"
+};
 </script>
 <style lang="less">
-#app{
+#app {
   width: 100%;
   height: 100%;
 }
+// #nprogress .bar {
+//   background: red !important; //自定义nprogress颜色
+// }
 </style>
- 

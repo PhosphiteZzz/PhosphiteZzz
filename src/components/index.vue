@@ -6,31 +6,38 @@
 
 <script>
 import countDown from "./countDown";
+
 const { log } = console;
 export default {
   name: "HelloWorld",
   data() {
     return {
       socket: null,
-      countTime:{
-        minute:12,
-        second:11
+      countTime: {
+        minute: 12,
+        second: 11
       }
     };
   },
   components: {
-    countDown,
+    countDown
   },
   props: {
-    msg: String,
+    msg: String
   },
   mounted() {
-    this.webSocket.onmessage = (data) => {
+    this.webSocket.onmessage = data => {
       console.log("data", data);
     };
-    this.webSocket.readyState = (data) => {
+    this.webSocket.readyState = data => {
       log("state", data);
     };
-  },
+  }
 };
 </script>
+<style lang="less" scoped>
+.hello {
+  width: 100%;
+  height: 100%;
+}
+</style>
